@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<body>
+    
+    <img src="{{ url_for('static' ,filename='levi.jpg') }}">
+    <div id = 'info'>
+        <h1>Andre' Laing</h1>
+        <h5 id='email'>@drelaing876@gmail.com</h5>
+        <h5 id='date'>
+            {{ message }}
+        </h5>
+    </div>
+    <div id='bio'>I am blah blah blah</div>
+    
+    <div id='profile'>
+        
+        <div id= 'words' class='grid-container'>
+            <h2 id='postsNum'> 7</h2> <h2 id='followingNum'> 100</h2> <h2 id='followersNum'> 250
+        </h2>    
+        
+        
+            <div id='posts'><h5>Posts</h5></div> <div id='following'><h5>Following</h5></div> <div id='followers'><h5>Followers</h5></div>
+        
+    </div>
+
+        <div id='followButton'>
+            <button class='followButton'>Follow</button>
+        </div>
+
+
+    </div>
+
+
+</body>
+{% endblock %}
